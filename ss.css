@@ -1,0 +1,52 @@
+/* Royal Blue + Violet Gradient Theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, royalblue, violet);
+  background-size: cover;
+  color: #fff;
+}
+
+/* Gradient text effect */
+h1, h2 {
+  background: linear-gradient(90deg, rgb(48, 49, 50), rgb(113, 73, 113));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: RED;
+  font-weight: bold;
+}
+
+/* Gradient button */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg, rgb(4, 53, 201), rgb(156, 32, 156));
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Card with subtle gradient border */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border: 3px solid;
+  border-image: linear-gradient(90deg, royalblue, violet) 1;
+}
+
+/* Ensure card text is readable on white background */
+.card {
+  color: #111;
+}
